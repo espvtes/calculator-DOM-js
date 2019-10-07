@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>Practices Javascript</title>
+        <style>
+            .main-div{
+                border: 3px solid #fff;
+                margin: auto;
+                width: 200px;
+                background-color: #2e0502;
+                color: white;
+                border-radius: 25px;
+
+            }
+            form{
+                padding: 20px;
+            }
+            body{
+                background: grey;
+            }
+            #firstNumber, #secondNumber{
+                margin-top: 5px;
+            }
+            .numbers{
+                margin-top:5px;
+            }
+            .buttons{
+                margin-top: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="main-div">
+            <form>
+                <div class="numbers">1st Number : </div>
+                <input type="text" id="firstNumber"/>
+                <div class="numbers">2st Number : </div>
+                <input type="text" id="secondNumber"/>
+                <div class="buttons">
+                    <button id="multiply" type="button"  onclick="btnMultiplay()">Multiply</button>
+                    <button id=divide" type="button"  onclick="btnDivide()">Divide</button>
+                    <button id="clear" type="button"  onclick="btnClear()">Clear</button>
+                </div>
+                <p>
+                    The result is: <br>
+                        <span id = "result"></span>
+                </p>
+
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
