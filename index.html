@@ -6,11 +6,13 @@
         <style>
             .main-div{
                 border: 3px solid #fff;
-                margin: auto;
                 width: 200px;
                 background-color: #2e0502;
                 color: white;
                 border-radius: 25px;
+                margin-right:auto;
+                margin-left: auto;
+                margin-top: 200px;
 
             }
             form{
@@ -28,6 +30,25 @@
             .buttons{
                 margin-top: 20px;
             }
+            .result-cal{
+                border: 2px solid white;
+                border-radius: 12px;
+                margin-top: 11px;
+                background-color: #f5c77d;
+            }
+            .p-result{
+                padding-left: 12px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+
+            }
+
+            #divide, #clear, #multiply{
+                background-color: orange;
+                border: 1px solid #fff;
+                border-radius: 3px;
+                
+            }
 
         </style>
     </head>
@@ -40,13 +61,12 @@
                 <input type="text" id="secondNumber"/>
                 <div class="buttons">
                     <button id="multiply" type="button"  onclick="btnMultiplay()">Multiply</button>
-                    <button id=divide" type="button"  onclick="btnDivide()">Divide</button>
+                    <button id="divide" type="button"  onclick="btnDivide()">Divide</button>
                     <button id="clear" type="button"  onclick="btnClear()">Clear</button>
                 </div>
-                <p>
-                    The result is: <br>
-                        <span id = "result"></span>
-                </p>
+                <div class="result-cal">
+                    <p class="p-result">The result is:   <span id = "result"></span></p>
+                </div>
 
             </form>
         </div>
